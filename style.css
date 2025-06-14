@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "norse";
+  src: url("./assets/fonts/Norse-KaWl.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "norse";
+  src: url("./assets/fonts/NorseBold-2Kge.otf") format("opentype");
+  font-weight: bold;
+}
+
+body {
+  font-family: "norse", Georgia, serif;
+}
+
+.bg-fade {
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+  background-color: #aed6f1;
+  background: radial-gradient(100% 100% at 50% 10%, #aed6f1 40%, #fff 100%);
+}
+
+.welcome {
+  font-size: 36px;
+}
+
+.center {
+  text-align: center;
+}
+
+.fit {
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  margin: auto;
+  width: 190px;
+  height: 254px;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Darker and bigger shadow */
+}
+
+.attribution {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+  padding: 4px 8px;
+  z-index: 1000;
+}
